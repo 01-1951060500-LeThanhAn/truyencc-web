@@ -26,7 +26,7 @@ const Search = () => {
       .then((data) => {
         setSliders(data[0].thumbnails);
 
-        setCountPages(100);
+        setCountPages(data[0].countPages);
 
         setLoading(false);
       });

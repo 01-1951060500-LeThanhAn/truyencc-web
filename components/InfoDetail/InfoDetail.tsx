@@ -1,33 +1,22 @@
-import React, { useState, useEffect, useId } from "react";
-import {
-  Chapter,
-  DetailInfo,
-  DetailItem,
-  Size,
-} from "../../Interface/Interface";
+import React, { useState, useEffect } from "react";
+import { Chapter, DetailItem, Size } from "../../Interface/Interface";
 import {
   AiOutlineEye,
   AiOutlineUser,
-  AiOutlineLike,
   AiFillHeart,
   AiFillTags,
   AiOutlineLink,
 } from "react-icons/ai";
-// import { FacebookShareButton, TwitterShareButton } from "react-share";
-// import { FacebookIcon, TwitterIcon } from "react-share";
+
 import { IoMdStar } from "react-icons/io";
 import { MdStarRate } from "react-icons/md";
 import { FaRegComments } from "react-icons/fa";
 import { AiTwotoneFileText } from "react-icons/ai";
-// import Comment from "../Comment/Comment";
 
 import { toast } from "react-toastify";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
-// import { addComicHistory } from "../../storeActions/history";
-// import Helmet from "../../Helmet/Helmet";
-// import TippySocial from "../Tippy/TippySocial";
+
 import "tippy.js/dist/tippy.css";
-// import { BASE_URL, copyLinktoClipboard } from "../../storeActions/constant";
 
 import Link from "next/link";
 import { db } from "../../config/firebase";

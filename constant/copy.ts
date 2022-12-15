@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-export const BASE_URL = "https://comics-basic.vercel.app";
+export const BASE_URL = "https://comics-thanhan.vercel.app";
 export const copyLinktoClipboard = (text: string) => {
   try {
     if (navigator.clipboard && window.isSecureContext) {
